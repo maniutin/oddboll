@@ -1,12 +1,15 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import logo from "./logo.svg";
+import Nav from "./components/Nav";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
+      <Router>
+        <Nav />
+      </Router>
     </div>
   );
 }
