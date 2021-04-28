@@ -10,7 +10,7 @@ const Nav = () => {
           Home
         </NavLink>
 
-        <NavLink exact to="/Reviews">
+        <NavLink exact to="/reviews">
           Reviews
         </NavLink>
 
