@@ -16,29 +16,41 @@ const Nav = () => {
           </NavLink>
         </div>
         <div className="nav-list">
-          <NavLink exact to="/">
-            Home
-          </NavLink>
+          <div className="nav-link">
+            <NavLink exact to="/">
+              Home
+            </NavLink>
+          </div>
 
-          <NavLink exact to="/reviews">
-            Reviews
-          </NavLink>
+          <div className="nav-link">
+            <NavLink exact to="/reviews">
+              Reviews
+            </NavLink>
+          </div>
 
-          <NavLink exact to="/interviews">
-            Interviews
-          </NavLink>
+          <div className="nav-link">
+            <NavLink exact to="/interviews">
+              Interviews
+            </NavLink>
+          </div>
 
-          <NavLink exact to="/listen">
-            Listen
-          </NavLink>
+          <div className="nav-link">
+            <NavLink exact to="/listen">
+              Listen
+            </NavLink>
+          </div>
 
-          <NavLink exact to="/3-word-reviews">
-            3-Word Reviews
-          </NavLink>
+          <div className="nav-link">
+            <NavLink exact to="/3-word-reviews">
+              3-Word Reviews
+            </NavLink>
+          </div>
 
-          <NavLink exact to="/about">
-            About
-          </NavLink>
+          <div className="nav-link">
+            <NavLink exact to="/about">
+              About
+            </NavLink>
+          </div>
         </div>
       </nav>
     </div>

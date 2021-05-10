@@ -17,6 +17,18 @@
   padding-right: 6vw;
   pointer-events: auto;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  padding: 2vw;
 }
 
 .nav-logo {
@@ -25,4 +37,5 @@
   max-height: 50px;
   border: 0;
   cursor: pointer;
+  height: fit-content;
 }
