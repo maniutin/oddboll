@@ -3,7 +3,14 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import "./ArticleCompact.css";
 
 const ArticleCompact = () => {
-  return <div>Sup</div>;
+  return (
+    <div className="album-cover">
+      <img
+        src="images/kotra-and-zavoloka-silence-2020-cover.jpeg"
+        alt="album cover"
+      />
+    </div>
+  );
 };
 
 export default ArticleCompact;
