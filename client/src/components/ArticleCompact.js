@@ -16,6 +16,11 @@ const ArticleCompact = () => {
         </div>
         <div className="article-category">Review</div>
         <div className="publication-date">May 5, 2021</div>
+        <div className="article-title">
+          <Link to="/kotra-and-zavoloka-silence-2020">
+            Kotra &amp; Zavoloka, “Silence” (2020)
+          </Link>
+        </div>
         <div className="article-excerpt">
           <p>This is the best article ever, wow!</p>
         </div>
