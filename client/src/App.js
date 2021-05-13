@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Nav from "./components/Nav";
+import ArticleList from "./components/ArticleList";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
       <Router>
         <Nav />
       </Router>
+      <div className="article-list">
+        <ArticleList />
+      </div>
     </div>
   );
 }
