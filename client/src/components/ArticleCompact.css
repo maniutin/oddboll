@@ -1,7 +1,15 @@
+.article-compact {
+  display: flex;
+  flex-direction: row;
+}
 .album-cover img {
   left: 0px;
   top: 0px;
   width: 506px;
   height: 506px;
-  position: absolute;
+  /* position: absolute; */
+}
+
+.article-category:after {
+  content: "•";
 }
