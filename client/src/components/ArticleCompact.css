@@ -10,6 +10,17 @@
   /* position: absolute; */
 }
 
+.article-compact-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.article-compact-metadata {
+  display: flex;
+  flex-direction: row;
+}
+
 .article-category:after {
   content: "•";
 }
