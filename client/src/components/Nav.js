@@ -17,37 +17,57 @@ const Nav = () => {
         </div>
         <div className="nav-list">
           <div className="nav-link">
-            <NavLink exact to="/">
+            <NavLink activeStyle={{ textDecoration: "underline" }} exact to="/">
               Home
             </NavLink>
           </div>
 
           <div className="nav-link">
-            <NavLink exact to="/reviews">
+            <NavLink
+              activeStyle={{ textDecoration: "underline" }}
+              exact
+              to="/reviews"
+            >
               Reviews
             </NavLink>
           </div>
 
           <div className="nav-link">
-            <NavLink exact to="/interviews">
+            <NavLink
+              activeStyle={{ textDecoration: "underline" }}
+              exact
+              to="/interviews"
+            >
               Interviews
             </NavLink>
           </div>
 
           <div className="nav-link">
-            <NavLink exact to="/listen">
+            <NavLink
+              activeStyle={{ textDecoration: "underline" }}
+              exact
+              to="/listen"
+            >
               Listen
             </NavLink>
           </div>
 
           <div className="nav-link">
-            <NavLink exact to="/3-word-reviews">
+            <NavLink
+              activeStyle={{ textDecoration: "underline" }}
+              exact
+              to="/3-word-reviews"
+            >
               3-Word Reviews
             </NavLink>
           </div>
 
           <div className="nav-link">
-            <NavLink exact to="/about">
+            <NavLink
+              activeStyle={{ textDecoration: "underline" }}
+              exact
+              to="/about"
+            >
               About
             </NavLink>
           </div>
