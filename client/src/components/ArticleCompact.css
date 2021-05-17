@@ -49,3 +49,11 @@
   font-style: italic;
   font-size: calc((1 - 1) * 1.2vw + 1rem);
 }
+
+.article-read-more a {
+  color: #fc221c;
+  font-size: calc((1 - 1) * 1.2vw + 1rem);
+  font-family: aktiv-grotesk;
+  font-weight: 300;
+  font-style: normal;
+}
