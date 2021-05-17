@@ -32,3 +32,13 @@
   content: "•";
   margin: 0 5px 0 5px;
 }
+
+.article-title a {
+  text-decoration: none;
+  margin: 0;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  font-size: calc((4 - 1) * 1vw + 1rem);
+}
