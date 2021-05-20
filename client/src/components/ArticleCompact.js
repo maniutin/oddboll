@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import "./ArticleCompact.css";
+
+import Article from "./Article";
 
 const ArticleCompact = () => {
   return (
     <div className="article-compact">
       <Router>
         <div className="album-cover">
-          <Link to="/kotra-and-zavoloka-silence-2020">
+          <Link to="/luca-yupanqui-sounds-of-the-unborn-2021">
             <img
               src="images/luca-yupanqui-sounds-of-the-unborn-2021-cover.jpeg"
               alt="album cover"
