@@ -11,9 +11,10 @@ function App() {
       <header className="App-header"></header>
       <Router>
         <Nav />
-        <Route path="/luca-yupanqui-sounds-of-the-unborn-2021">
-          <Article />
-        </Route>
+        <Route
+          path="/luca-yupanqui-sounds-of-the-unborn-2021"
+          component={Article}
+        />
       </Router>
       <div className="article-list">
         <ArticleList />
