@@ -13,10 +13,11 @@ function App() {
       <Router>
         <Nav />
         <Route
+          exact
           path="/luca-yupanqui-sounds-of-the-unborn-2021"
           component={Article}
         />
-        <Route path="/about" component={About} />
+        <Route exact path="/about" component={About} />
       </Router>
       <div className="article-list">
         <ArticleList />
