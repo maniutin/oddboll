@@ -1,5 +1,5 @@
 import React from "react";
-import "./Article.css";
+import "./About.css";
 
 const About = () => {
   return <div>Abouuuuutttttt</div>;
