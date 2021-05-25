@@ -15,6 +15,7 @@ function App() {
           path="/luca-yupanqui-sounds-of-the-unborn-2021"
           component={Article}
         />
+        <Route path="/about" component={Article} />
       </Router>
       <div className="article-list">
         <ArticleList />
