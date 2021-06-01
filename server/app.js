@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const indexRouter = require("./routes/index");
-const articles = require("./routes/articles");
+const articlesRouter = require("./routes/articles");
 
 const app = express();
 
@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter(db));
-app.use("/articles", articles(db));
+app.use("/articles", articlesRouter(db));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
