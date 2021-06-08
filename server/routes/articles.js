@@ -3,7 +3,7 @@ const router = express.Router();
 
 module.exports = (db) => {
   /* GET articles */
-  router.get("/articles", (req, res) => {
+  router.get("/", (req, res) => {
     const query = {
       text: "SELECT * FROM articles;",
     };

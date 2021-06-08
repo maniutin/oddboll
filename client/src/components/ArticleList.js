@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import useArticleData from "../hooks/useArticleData";
 import ArticleCompact from "./ArticleCompact";
 import "./ArticleList.css";
 
 const ArticleList = () => {
+  const { state } = useArticleData();
   return <ArticleCompact />;
 };
 
