@@ -6,7 +6,7 @@ const useArticleData = () => {
 
   useEffect(() => {
     axios
-      .get("/articles")
+      .get("http://localhost:3001/articles")
       .then((result) =>
         setState((prev) => ({ ...prev, articleData: result.data }))
       )
