@@ -2,7 +2,7 @@
 
 ## A music blog celebrating weirdos and outcasts from all the music spectrum
 
-### This website has minimalistic design which coupled with React.js allows for maximum speed and great UX.
+### This website has minimalistic design which coupled with React.js allows for maximum speed and great UX. The current version buil with Squarespace can be enjoyed [here](https://oddboll.net/)
 
 ## Dependencies
 
