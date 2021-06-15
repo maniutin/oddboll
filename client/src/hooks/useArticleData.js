@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const useArticleData = () => {
-  const [state, setState] = useState({ articleData: [] });
+  const [articleInfo, setArticleInfo] = useState({ articleData: [] });
 
   useEffect(() => {
     axios
@@ -14,8 +14,8 @@ const useArticleData = () => {
   }, []);
 
   return {
-    state,
-    setState,
+    articleInfo,
+    setArticleInfo,
   };
 };
 
