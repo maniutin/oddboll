@@ -26,10 +26,10 @@ function App() {
       </Router>
       <div className="article-list">
         <ArticleList
-          category={articleInfo.articleData[0].category}
-          datePublished={articleInfo.articleData[0].date_published}
-          title={articleInfo.articleData[0].title}
-          excerpt={articleInfo.articleData[0].excerpt}
+        // category={articleInfo.articleData[0].category}
+        // datePublished={articleInfo.articleData[0].date_published}
+        // title={articleInfo.articleData[0].title}
+        // excerpt={articleInfo.articleData[0].excerpt}
         />
       </div>
     </div>
