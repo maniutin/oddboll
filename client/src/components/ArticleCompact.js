@@ -1,10 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import "./ArticleCompact.css";
+import useArticleData from "../hooks/useArticleData";
 
 import Article from "./Article";
 
 const ArticleCompact = () => {
+  const { articleInfo } = useArticleData();
+  console.log("ARTICLE INFO: ", articleInfo.articleData[0]);
   return (
     <div className="article-compact">
       <Router>
@@ -19,20 +22,22 @@ const ArticleCompact = () => {
 
         <div className="article-compact-text">
           <div className="article-compact-metadata">
-            <div className="article-category">Review</div>
-            <div className="publication-date">April 30, 2021</div>
+            <div className="article-category">
+              {articleInfo.articleData[0].category}
+            </div>
+            <div className="publication-date">
+              {articleInfo.articleData[0].date_published}
+            </div>
           </div>
 
           <div className="article-title">
             <Link to="/luca-yupanqui-sounds-of-the-unborn-2021">
-              Luca Yupanqui, “Sounds Of The Unborn” (2021)
+              {articleInfo.articleData[0].title}
             </Link>
           </div>
 
           <div className="article-excerpt">
-            <p className="excerpt">
-              Probably the first album by a yet unborn artist
-            </p>
+            <p className="excerpt">{articleInfo.articleData[0].excerpt}</p>
           </div>
 
           <div className="article-read-more">

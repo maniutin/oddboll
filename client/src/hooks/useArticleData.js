@@ -8,7 +8,7 @@ const useArticleData = () => {
     axios
       .get("http://localhost:3001/articles")
       .then((result) =>
-        setState((prev) => ({ ...prev, articleData: result.data }))
+        setArticleInfo((prev) => ({ ...prev, articleData: result.data }))
       )
       .catch((err) => console.log("ERROR!", err));
   }, []);
