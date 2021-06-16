@@ -2,15 +2,8 @@ import React from "react";
 import ArticleCompact from "./ArticleCompact";
 import "./ArticleList.css";
 
-const ArticleList = (props) => {
-  return (
-    <ArticleCompact
-      category={props.category}
-      datePublished={props.datePublished}
-      title={props.title}
-      excerpt={props.excerpt}
-    />
-  );
+const ArticleList = () => {
+  return <ArticleCompact />;
 };
 
 export default ArticleList;

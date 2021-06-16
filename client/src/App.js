@@ -6,12 +6,7 @@ import Article from "./components/Article";
 import About from "./components/About";
 import "./App.css";
 
-import useArticleData from "../src/hooks/useArticleData";
-
 function App() {
-  const { articleInfo } = useArticleData();
-  console.log("ARTICLE INFO: ", articleInfo.articleData[0]);
-
   return (
     <div className="App">
       <header className="App-header"></header>
@@ -25,12 +20,7 @@ function App() {
         <Route exact path="/about" component={About} />
       </Router>
       <div className="article-list">
-        <ArticleList
-          category={articleInfo.articleData[0].category}
-          datePublished={articleInfo.articleData[0].date_published}
-          title={articleInfo.articleData[0].title}
-          excerpt={articleInfo.articleData[0].excerpt}
-        />
+        <ArticleList />
       </div>
     </div>
   );

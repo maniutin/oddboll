@@ -2,9 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import "./ArticleCompact.css";
 
-import Article from "./Article";
+import useArticleData from "../hooks/useArticleData";
 
 const ArticleCompact = (props) => {
+  const { articleInfo } = useArticleData();
+  console.log("ARTICLE INFO: ", articleInfo.articleData[0]);
+
   return (
     <div className="article-compact">
       <Router>
@@ -19,18 +22,32 @@ const ArticleCompact = (props) => {
 
         <div className="article-compact-text">
           <div className="article-compact-metadata">
-            <div className="article-category">{props.category}</div>
-            <div className="publication-date">{props.datePublished}</div>
+            <div className="article-category">
+              {articleInfo.articleData[0]
+                ? articleInfo.articleData[0].category
+                : "Loading..."}
+            </div>
+            <div className="publication-date">
+              {articleInfo.articleData[0]
+                ? articleInfo.articleData[0].date_published
+                : "Loading..."}
+            </div>
           </div>
 
           <div className="article-title">
             <Link to="/luca-yupanqui-sounds-of-the-unborn-2021">
-              {props.title}
+              {articleInfo.articleData[0]
+                ? articleInfo.articleData[0].title
+                : "Loading..."}
             </Link>
           </div>
 
           <div className="article-excerpt">
-            <p className="excerpt">{props.excerpt}</p>
+            <p className="excerpt">
+              {articleInfo.articleData[0]
+                ? articleInfo.articleData[0].excerpt
+                : "Loading..."}
+            </p>
           </div>
 
           <div className="article-read-more">
