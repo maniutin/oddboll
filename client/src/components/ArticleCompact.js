@@ -4,7 +4,7 @@ import "./ArticleCompact.css";
 
 import Article from "./Article";
 
-const ArticleCompact = () => {
+const ArticleCompact = (props) => {
   return (
     <div className="article-compact">
       <Router>

@@ -11,7 +11,7 @@ const useArticleData = () => {
         setArticleInfo((prev) => ({ ...prev, articleData: result.data }))
       )
       .catch((err) => console.log("ERROR!", err));
-  }, []);
+  }, [articleInfo.articleData.lenght]);
 
   return {
     articleInfo,
