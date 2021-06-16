@@ -6,7 +6,7 @@ const ArticleList = (props) => {
   return (
     <ArticleCompact
       category={props.category}
-      datePublished={props.date_published}
+      datePublished={props.datePublished}
       title={props.title}
       excerpt={props.excerpt}
     />
