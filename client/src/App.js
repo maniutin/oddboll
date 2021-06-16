@@ -7,7 +7,6 @@ import About from "./components/About";
 import "./App.css";
 
 import useArticleData from "../src/hooks/useArticleData";
-import { useEffect } from "react";
 
 function App() {
   const { articleInfo } = useArticleData();
