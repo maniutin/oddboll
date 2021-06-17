@@ -25,12 +25,12 @@ const ArticleCompact = (props) => {
             <div className="article-category">
               {articleInfo.articleData[0]
                 ? articleInfo.articleData[0].category
-                : "Loading..."}
+                : null}
             </div>
             <div className="publication-date">
               {articleInfo.articleData[0]
-                ? articleInfo.articleData[0].date_published
-                : "Loading..."}
+                ? articleInfo.articleData[0].to_char
+                : null}
             </div>
           </div>
 
@@ -38,7 +38,7 @@ const ArticleCompact = (props) => {
             <Link to="/luca-yupanqui-sounds-of-the-unborn-2021">
               {articleInfo.articleData[0]
                 ? articleInfo.articleData[0].title
-                : "Loading..."}
+                : null}
             </Link>
           </div>
 
