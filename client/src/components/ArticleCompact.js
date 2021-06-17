@@ -23,30 +23,23 @@ const ArticleCompact = (props) => {
         <div className="article-compact-text">
           <div className="article-compact-metadata">
             <div className="article-category">
-              {articleInfo.articleData[0]
-                ? articleInfo.articleData[0].category
-                : null}
+              {articleInfo.articleData[0] &&
+                articleInfo.articleData[0].category}
             </div>
             <div className="publication-date">
-              {articleInfo.articleData[0]
-                ? articleInfo.articleData[0].to_char
-                : null}
+              {articleInfo.articleData[0] && articleInfo.articleData[0].to_char}
             </div>
           </div>
 
           <div className="article-title">
             <Link to="/luca-yupanqui-sounds-of-the-unborn-2021">
-              {articleInfo.articleData[0]
-                ? articleInfo.articleData[0].title
-                : null}
+              {articleInfo.articleData[0] && articleInfo.articleData[0].title}
             </Link>
           </div>
 
           <div className="article-excerpt">
             <p className="excerpt">
-              {articleInfo.articleData[0]
-                ? articleInfo.articleData[0].excerpt
-                : "Loading..."}
+              {articleInfo.articleData[0] && articleInfo.articleData[0].excerpt}
             </p>
           </div>
 
